@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+        background-color: rgb(38, 190, 155);
+        height: 100vw;
+        }
+        .subclass{
+        display:flex;
+        justify-content:flex-start;
+        align-content: flex-start; 
+        padding: 5%;
+        }
+        .Mainbtn button{
+            background-color: aqua;
+            border-radius: 100px;
+            box-shadow: 0px 0px 25px;
+            padding: 5px;
+            margin-left: 70px;
+          
+
+        }
+       .Mainbtn{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content:start;
+            align-content: start;
+            padding-top: 30%;
+        }
+    </style> 
+    </style>
+</head>
+<body>
+    <body>
+        <div class="button"> 
+       <div class="Mainbtn"><button  onclick="insertOTP()">Get your OTP</button></div>
+       <div class="subclass">
+        <span>your OTP:</span><div id="otp"></div>
+    </div>
+        </div>
+        </div>
+</body>
+<script>
+    let div=document.getElementById("otp")
+    
+    function insertOTP(){
+        let x=Math.floor(Math.random()*1000000);
+        div.innerHTML=x;
+    }
+   
+ 
+    
+    
+</script>
+</html>
